@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: #111d27;
+    overflow: hidden;
+}
+*{
+    border: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.chrome{
+    position: absolute;
+    background: #4071a0;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 6px 16px #0000006e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.circulo{
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #9cbee4), color-stop(100%, #3878bb));
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 10px solid white;
+    position: absolute;
+    z-index: 5;
+    box-shadow: 0 6px 15px #0000118a;
+}
+.clip1{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform: skewX(-28deg);
+    position: absolute;
+    left: 160px;
+    top: 101px;
+    background: #d0e2f1;
+    box-shadow: 0px 25px 20px #0000118a;
+}
+.clip1::after{
+    content: "";
+    background: #d0e2f1;
+    width: 139px;
+    height: 65px;
+    position: absolute;
+    left: -29%;
+    top: -3%;
+}
+.clip2{
+    width: 100%;
+    height: 100%;
+    transform: skewX(49deg);
+    position: absolute;
+    left: -167px;
+    top: 65px;
+    background: #89b7e1;
+    z-index: 0;
+}
+.clip2::after{
+    content: "";
+    background: #89b7e1;
+    width: 120px;
+    height: 65px;
+    position: absolute;
+    left: 286px;
+    top: 119px;
+    z-index: -8;
+}
